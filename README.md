@@ -1,8 +1,6 @@
-<h1 align="center">StationeryBench-Sim</h1>
+<h1 align="center">StationeryBench-Sim <sub>(A <a href="#about-gyre">Gyre</a> pilot release)</sub></h1>
 
-<p align="center"><b>A <a href="#about-gyre">Gyre</a> pilot release</b></p>
-
-<p align="center">Taking MolmoAct2 from 0% to 36% and 76% on two hard bimanual tasks, with ~263 L40S GPU-hours of fine-tuning</p>
+<p align="center"><b>MolmoAct2 from 0% to 36% / 76% on two hard bimanual tasks with ~263 L40S GPU-hours</b></p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-blue.svg"></a>
