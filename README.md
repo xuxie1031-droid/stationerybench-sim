@@ -40,7 +40,7 @@ Each row uses the same simulator seed from the sealed evaluation set. Physics si
 
 This is the first public pilot from **Gyre**. It is an unofficial physics-simulation replica of two hard bimanual tasks from Robocurve's [StationeryBench](https://robocurve.github.io/stationerybench), `eraser_from_box` and `ruler_handover`, on the bimanual YAM robot.
 
-On the real robot, the public MolmoAct2-BimanualYAM model completes neither task. In our replica it also scores 0%. Fine-tuned on synthetic demonstration data generated in the replica, with a small compute budget, the same model reaches 36% and 76% on seeds that were never used during development.
+On the real robot, the public MolmoAct2-BimanualYAM model completes neither task. In our replica it also scores 0%. Fine-tuned mainly on synthetic demonstrations generated in the replica, co-trained with Ai2's public real-robot data, and with a small compute budget, the same model reaches 36% and 76% on seeds that were never used during development.
 
 The release contains the task replicas, the A/B evaluation harness, the training recipe, the fine-tuned weights and the synthetic training data for the two tasks.
 
@@ -55,6 +55,7 @@ The release contains the task replicas, the A/B evaluation harness, the training
 - **~263 L40S GPU-hours** for the whole 13-round fine-tuning lineage, about 66–105 H100-hour equivalents.
 - That is **under 5%** of the ~2,300 H100-hours Ai2 used to adapt the base model to the YAM robot.
 - **The real-robot failure reproduces in simulation:** zero-shot MolmoAct2 scored 0/20 on both tasks on the real YAM, and 0/50 in our replica.
+- **Real + synthetic co-training:** mostly synthetic demonstrations from the replica, mixed with Ai2's public real YAM data.
 - **Open:** task replicas, A/B evaluation harness, training recipe, weights and 6,467 synthetic training episodes.
 
 <br>
