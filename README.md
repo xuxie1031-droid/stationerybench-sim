@@ -1,4 +1,4 @@
-<h1 align="center">StationeryBench-Sim <sub>(A <a href="#about-gyre">Gyre</a> pilot release)</sub></h1>
+<h1 align="center">StationeryBench-Sim — a Gyre pilot release</h1>
 
 <p align="center"><b>MolmoAct2 from 0% to 36% / 76% on two hard bimanual tasks with ~263 L40S GPU-hours</b></p>
 
